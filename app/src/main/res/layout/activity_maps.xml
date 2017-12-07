@@ -1,0 +1,76 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        tools:context="project.cis350.upenn.edu.wywg.MapsActivity">
+
+
+
+        <TextView
+            android:id="@+id/latlongLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textedit"
+            android:background="#ff058fff"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/buttonMyLoc"
+            style="@style/NiceButton"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="275dp"
+            android:layout_marginTop="425dp"
+            android:text="My Location"
+            android:layout_alignBaseline="@+id/textedit"
+            android:layout_alignBottom="@+id/textedit"
+            android:layout_alignRight="@+id/textedit" />
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+            <Button
+                android:id="@+id/recommendations"
+                style="@style/NiceButton"
+                android:layout_width="140dp"
+                android:layout_height="68dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="425dp"
+                android:onClick="toUsersList"
+                android:text="Recommendations"
+                android:layout_alignBaseline="@+id/textedit"
+                android:layout_alignBottom="@+id/textedit"
+                android:layout_alignRight="@+id/textedit" />
+
+    </fragment>
+
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+
+</android.support.v4.widget.DrawerLayout>

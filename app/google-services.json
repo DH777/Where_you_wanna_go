@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "908705872205",
+    "firebase_url": "https://where-do-you-wanna-go.firebaseio.com",
+    "project_id": "where-do-you-wanna-go",
+    "storage_bucket": "where-do-you-wanna-go.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908705872205:android:fd6bf4664b2ed95d",
+        "android_client_info": {
+          "package_name": "project.cis350.upenn.edu.wywg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908705872205-q80psgclsd7986ohrk5k7fmvsgmdoh2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "project.cis350.upenn.edu.wywg",
+            "certificate_hash": "81b894c20000ffa44ecf6c7bb09328bc31dedf66"
+          }
+        },
+        {
+          "client_id": "908705872205-8prublmbcmnaqdql55f42bc03qpjnh4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "project.cis350.upenn.edu.wywg",
+            "certificate_hash": "2b16b4810267617af1501918435cf5ee5e1d286c"
+          }
+        },
+        {
+          "client_id": "908705872205-mbvkpdvmispq04rju7gbj3eed2i5d6uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVQmEwNFWVAFggjTMxESc2_WjEtChp0yI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908705872205-mbvkpdvmispq04rju7gbj3eed2i5d6uo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

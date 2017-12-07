@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_gravity="center" android:orientation="vertical"
+    android:baselineAligned="false">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rate By:"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+
+    <RadioGroup
+        android:id="@+id/rgFilterBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost" />
+
+        <EditText
+            android:id="@+id/etCostFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <RadioButton
+            android:id="@+id/rbTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time" />
+
+        <EditText
+            android:id="@+id/etTimeFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <RadioButton
+            android:id="@+id/rbRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar" />
+
+        <RadioButton
+            android:id="@+id/rbHemisphere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hemisphere" /><![CDATA[
+
+
+            android:id="@+id/cbNorth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="North Hemisphere" />
+
+
+            android:id="@+id/cbEast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="East Hemisphere" />
+
+
+            android:id="@+id/cbWest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="West Hemisphere" />
+
+        ]]>
+
+        <CheckBox
+            android:id="@+id/cbNorth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="North Hemisphere" />
+
+        <RadioButton
+            android:id="@+id/rbBeenOrGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Where You've Been/Want To Go" />
+
+    </RadioGroup>
+    <![CDATA[
+    //
+        //android:layout_width="wrap_content"
+        //android:layout_height="wrap_content"
+        //android:id="@+id/ratingBar" />
+
+
+
+    ]]>
+
+    <CheckBox
+        android:id="@+id/cbBeenHere"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checked="false"
+        android:text="Where You&apos;ve Been" />
+
+    <CheckBox
+        android:id="@+id/cbFilterOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Enable Filters"
+        android:checked="false"/>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toDone"
+        android:layout_gravity="center_horizontal"
+        android:text="Done" />
+
+</LinearLayout>

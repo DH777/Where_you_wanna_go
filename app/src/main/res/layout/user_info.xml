@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/rlProf"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:paddingBottom="24dp">
+
+
+        <ImageView
+            android:id="@+id/ivFriend"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/ivMenu" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="94dp"
+            android:layout_marginRight="94dp"
+            android:layout_toLeftOf="@+id/ivFriend"
+            android:layout_toStartOf="@+id/ivFriend"
+            android:text="Name"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emailAdd"
+        android:layout_width="372dp"
+        android:layout_height="29dp"
+        android:text="email:" />
+
+    <EditText
+        android:id="@+id/emailAdr"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/live"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:text="city" />
+
+    <EditText
+        android:id="@+id/city_live"
+        android:layout_width="389dp"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/friends"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="want to find someone to travel with" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <RadioButton
+                android:id="@+id/yes"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="yes" />
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="no" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gender" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="36dp" >
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="female" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="preferred travel time" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="72dp" >
+
+        <RadioButton
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="Dec.-Feb." />
+
+        <RadioButton
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="Mar.-May" />
+
+        <RadioButton
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="June-Aug." />
+
+        <RadioButton
+            android:id="@+id/time4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="Sept.-Nov." />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EDIT" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:text="save" />
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="jump to map" />
+
+    </LinearLayout>
+
+</LinearLayout>
